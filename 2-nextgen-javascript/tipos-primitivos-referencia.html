@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2018 by anonymous (http://jsbin.com/tirizayuni/1/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+
+<script id="jsbin-javascript">
+// mais em javascript
+
+// tipos primitivos
+// quando armazena valor em uma variavel ou atribui
+// para outra variavel js copia o valor
+const number = 1;
+const num2 = number;
+console.log(num2);
+
+// tipos referencia
+// person e armazanado na memoria
+// secondPerson armazena um ponteiro para person
+const person = {
+  name : 'Tiago'
+};
+const secondPerson = person;
+person.name = 'Manu'; //mesmo alterando person, secondPerson recebe o valor Manu
+console.log(secondPerson);
+
+// para copiar o objeto de fato e nao o ponteiro
+const secondPerson = {
+  ...person
+};
+</script>
+</body>
+</html>
